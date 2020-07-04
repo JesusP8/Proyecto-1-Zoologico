@@ -1,8 +1,12 @@
 package Animales.oop;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+import Grafica.*;
 import java.util.InputMismatchException;
+
 public class Main  {
+
 
 	public static void main(String[] args) {
 
@@ -99,6 +103,9 @@ public class Main  {
 				d15.setheight(70);
 				d15.setWeight(20);
 				d15.settipodeanimal("Aves");
+				
+				UI ventana1= new UI();
+				ventana1.setVisible(true);
 
 			Scanner sc = new Scanner(System.in);
 			boolean salir = false;
@@ -136,7 +143,6 @@ public class Main  {
 							System.out.println(d13);
 							System.out.println(d14);
 							System.out.println(d15);
-
 							break;
 						case 2:
 							System.out.println("\n LISTA DE MAMIFEROS\n ");
@@ -240,7 +246,7 @@ public class Main  {
 
 		System.out.println("\n El Array tiene los siguientes Reptiles:\n " + reptiles);
 
-	}	
+	}
 }
 
 
